@@ -26,11 +26,11 @@ EXPO_PUBLIC_STRIPE_PUBLIC_KEY="" //LA MISMA KEY PUBLISHABLE DE STRIPE QUE USASTE
 Con esto deberia funcionar la app, exceptuando el mapa. Para hacer que funcione Google Maps: <br/>
 Busca la carpeta "android" que se creo automaticamente en el paso anterior.<br/>
 Dentro de android, busca la carpeta app, luego src, luego main, y abre el archivo AndroidManifest.xml<br/>
-Dentro del archivo AndroidManifest.xml, busca la etiqueta <application android:name=".MainApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="true" android:theme="@style/AppTheme" android:supportsRtl="true">, da un enter, y copia y pega lo siguiente:<br/>
+Dentro del archivo AndroidManifest.xml, busca la etiqueta < application android:name=".MainApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="true" android:theme="@style/AppTheme" android:supportsRtl="true" >, da un enter, y copia y pega lo siguiente: Por favor, borra los espacios entre meta-data y el <, igualmente al final, antes del ><br/>
 <br/>
- <meta-data
+ < meta-data
      android:name="com.google.android.geo.API_KEY"
-     android:value="AIzaSyCR5r_fMK-wrQjIfg7PLt3CsETUDdYHKdk"/><br/>
+     android:value="AIzaSyCR5r_fMK-wrQjIfg7PLt3CsETUDdYHKdk"/ ><br/>
      <br/>
 
 Esta etiqueta deberia estar arriba de varias mas que tambien empiecen por <meta-data>.<br/>
